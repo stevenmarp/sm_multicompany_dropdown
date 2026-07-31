@@ -1,0 +1,22 @@
+.o_switch_company_menu_dropdown {
+    .o_sm_company_actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2px;
+        padding: 0 4px 6px;
+        margin-bottom: 4px;
+        border-bottom: 1px solid #e9ecef;
+
+        .btn {
+            font-size: 12px;
+            padding: 2px 6px;
+            text-decoration: none;
+            white-space: nowrap;
+
+            &:disabled {
+                opacity: .45;
+            }
+        }
+    }
+}

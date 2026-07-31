@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="sm_multicompany_dropdown.SwitchCompanyMenuItems"
+       t-inherit="web.SwitchCompanyMenu.Items" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_switch_company_menu_items')]" position="before">
+            <div t-if="hasMultipleCompanies" class="o_sm_company_actions">
+                <button class="btn btn-sm btn-link o-navigable o_sm_company_all"
+                        t-att-disabled="allCompaniesSelected"
+                        t-on-click="() => this.selectAllCompanies()">
+                    <i class="fa fa-check-square-o me-1"/>Select all
+                </button>
+                <button class="btn btn-sm btn-link o-navigable o_sm_company_none"
+                        t-on-click="() => this.deselectAllCompanies()">
+                    <i class="fa fa-square-o me-1"/>Deselect all
+                </button>
+                <button class="btn btn-sm btn-link o-navigable o_sm_company_except"
+                        t-att-title="'Select every company except ' + defaultCompanyName"
+                        t-on-click="() => this.selectAllExceptDefault()">
+                    <i class="fa fa-minus-square-o me-1"/>All except default
+                </button>
+            </div>
+        </xpath>
+    </t>
+
+</templates>
