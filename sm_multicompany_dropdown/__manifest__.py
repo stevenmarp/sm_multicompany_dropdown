@@ -1,5 +1,5 @@
 {
-    "name": "Multi Company Dropdown: Select All and Search",
+    "name": "Multi Company Dropdown | Select All and Search",
     "version": "1.0.0",
     "category": "Extra Tools",
     "summary": "Search companies in the company switcher and select or deselect them all in one click",
